@@ -13,7 +13,7 @@ describe("Locators", () => {
     it("find an element by its attribute using xpath", () => {
       cy.xpath(`//pre[@class=' language-html']`).should("contain.text", "button");
     });
-  
+
     it("Find by class (middle and spaces)", () => {
       //normalize-space function to clean up stray whitespace characters around the class name
       cy.xpath(
